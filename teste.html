@@ -1,0 +1,112 @@
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+.calculadora{
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 100%;
+    transform: translate(-200,-200);
+
+
+
+}
+
+      header {
+        background-color: blueviolet;
+        padding: 5px;
+      }
+      header h2 {
+        color: #fff;
+      }
+
+      .container {
+        margin: auto;
+        width: 70%;
+        border: 1px solid blueviolet;
+        border-radius: 15px;
+      }
+      input {
+        width: 90%;
+        padding: 6px;
+        margin: 6px;
+        border: 5px rebeccapurple;
+      }
+
+      input:hover {
+        background-color: rgba(127, 255, 212, 0.185);
+      }
+
+      button {
+        width: 50px;
+        margin: 50px;
+        font-size: 25px;
+        background-color: darkgrey;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Calculadora</h2>
+    </header>
+    <div class="container">
+      <input type="number" id="x" placeholder="Informe X" />
+      <input type="number" id="y" placeholder="Informe Y" />
+      <input type="number" id="z" readonly placeholder="Resultado" />
+      <button type="button" onclick=" somar()">+</button>
+      <button type="button" onclick="subtrair()">-</button>
+      <button type="button" onclick="dividir()">/</button>
+      <button type="button" onclick="mutiplicar()">*</button>
+    </div>
+    <script>
+      const somar = function() {
+        let x = document.getElementById("x").value;
+        let y = document.getElementById("y").value;
+        z = parseFloat(x) + parseFloat(y);
+
+        document.getElementById("z").value = z;
+        console.log(z);
+      };
+const subtrair = function() {
+let x = document.getElementById("x").value;
+let y = document.getElementById("y").value;
+z= parseFloat(x) - parseFloat(y);
+
+document.getElementById("z").value =z;
+console.log(z)
+
+};
+const dividir = function() {
+let x = document.getElementById("x").value
+let y = document.getElementById("y").value
+z= parseFloat(x) / parseFloat(y);
+
+document.getElementById("z").value =z;
+console.log(z)
+
+};
+const mutiplicar = function() {
+let x = document.getElementById("x").value
+let y = document.getElementById("y").value
+z= parseFloat(x) * parseFloat(y)
+
+document.getElementById("z").value =z;
+console.log(z)
+
+}
+
+
+
+    </script>
+  </body>
+</html>
