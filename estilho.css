@@ -1,0 +1,75 @@
+body{
+    background: linear-gradient(to right, #8C030E,#D9663D,#fabc03,#ed143d,#F27405);
+    background-size: 500% 100%;
+
+    animation-name: background;
+    animation-duration:10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes background{
+
+    0%{
+        background-position-x: 0%;
+    }
+
+
+    100%{
+         background-position-x: 100%;
+
+    }
+}
+
+
+.box{
+    background:lavender;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    margin-top: 100px;
+}
+
+.box input{
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+
+}
+
+
+.valoy input{
+    text-align: center;
+}
+
+
+h1{
+    background-color: crimson;
+    text-align: center;
+    color: antiquewhite;
+}
+
+div input{
+    border-radius: 15px;
+    margin-top: 15px;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+div button{
+    border-radius: 15px;
+    border-color: crimson;
+    background-color:indianred;
+    color:wheat;
+    cursor: pointer;
+    margin-top: 30px;
+
+}
